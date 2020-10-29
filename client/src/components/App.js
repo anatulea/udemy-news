@@ -19,8 +19,6 @@ class App extends Component {
           this.state.stories.map(item => {
             const { id, by, score, title, url, time } = item;
 
-            console.log('item', item);
-
             return (
               <div key={id}>
                 <a href={url}>{title}</a>
