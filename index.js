@@ -106,5 +106,5 @@ app.use((err, req, res, next) => {
   res.status(500).json({ type: 'error', message: err.message });
 });
 
-const PORT = 3000;
+const PORT = port.env.PORT || 3000;
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
